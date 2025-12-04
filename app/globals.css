@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .prose-custom {
+    @apply text-gray-700 leading-relaxed;
+  }
+  
+  .prose-custom p {
+    @apply mb-4;
+  }
+  
+  .prose-custom h2 {
+    @apply text-2xl font-bold mt-8 mb-4;
+  }
+  
+  .prose-custom h3 {
+    @apply text-xl font-bold mt-6 mb-3;
+  }
+  
+  .prose-custom ul {
+    @apply list-disc list-inside mb-4;
+  }
+  
+  .prose-custom ol {
+    @apply list-decimal list-inside mb-4;
+  }
+}
